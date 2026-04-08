@@ -16,10 +16,20 @@ function endAuctions() {
               ->execute([$status, $winner_id, $auction['current_price'], $auction['id']]);
 
         if ($winner_id) {
+            notifyWinner($auction['id'], $winner_id, $auction['current_price']);
             // Insert transaction
             $conn->prepare("INSERT INTO transactions (auction_id, buyer_id, seller_id, amount) VALUES (?, ?, (SELECT seller_id FROM auction_items WHERE id = (SELECT item_id FROM auctions WHERE id = ?)), ?)")
                   ->execute([$auction['id'], $winner_id, $auction['id'], $auction['current_price']]);
         }
     }
+}
+
+function notifyWinner($auction_id, $winner_id, $final_price) {
+    global $conn;
+    $auction = $conn->query("SELECT ai.title FROM auctions a JOIN auction_items ai ON a.item_id = ai.id WHERE a.id = $auction_id")->fetch_assoc();
+    $winner = $conn->query("SELECT email FROM users WHERE id = $winner_id")->fetch_assoc();
+    $subject = "You won the auction for " .  $auction['title'];
+    $message = "Congratulations! You won with a bid of $" . $final_price . ".";
+    mail($winner['email'], $subject, $message);
 }
 ?>
