@@ -26,8 +26,14 @@ function endAuctions() {
 
 function notifyWinner($auction_id, $winner_id, $final_price) {
     global $conn;
-    $auction = $conn->query("SELECT ai.title FROM auctions a JOIN auction_items ai ON a.item_id = ai.id WHERE a.id = $auction_id")->fetch_assoc();
-    $winner = $conn->query("SELECT email FROM users WHERE id = $winner_id")->fetch_assoc();
+    $stmt = $conn->prepare("SELECT ai.title FROM auctions a JOIN auction_items ai ON a.item_id = ai.id WHERE a.id = ?");
+    $stmt->bind_param("i", $auction_id);
+    $stmt->execute();
+    $auction = $stmt->get_result()->fetch_assoc();
+    $stmt = $conn->prepare("SELECT email FROM users WHERE id = ?");
+    $stmt->bind_param("i", $winner_id);
+    $stmt->execute();
+    $winner = $stmt->get_result()->fetch_assoc();
     $subject = "You won the auction for " .  $auction['title'];
     $message = "Congratulations! You won with a bid of $" . $final_price . ".";
     mail($winner['email'], $subject, $message);
