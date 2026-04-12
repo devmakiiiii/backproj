@@ -23,6 +23,18 @@ class User {
         return $this->pdo->lastInsertId();
     }
 
+    public function findByUsername($username) {
+        $stmt = $this->pdo->prepare("SELECT id FROM users WHERE username = ?");
+        $stmt->execute([$username]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function findByEmail($email) {
+        $stmt = $this->pdo->prepare("SELECT id FROM users WHERE email = ?");
+        $stmt->execute([$email]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
     public function authenticate($username, $password) {
         $stmt = $this->pdo->prepare("SELECT id, password FROM users WHERE username = ? OR email = ?");
         $stmt->execute([$username, $username]);

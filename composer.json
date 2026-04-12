@@ -2,7 +2,13 @@
     "name": "desktop5420/backproj-main",
     "type": "project",
     "require": {
-        "vlucas/phpdotenv": "^5.0"
+        "vlucas/phpdotenv": "^5.0",
+        "firebase/php-jwt": "^6.10"
+    },
+    "config": {
+        "audit": {
+            "block-insecure": false
+        }
     },
     "license": "MIT",
     "autoload": {
@@ -16,5 +22,6 @@
             "email": "dev.palomares@gmail.com"
         }
     ],
+
     "minimum-stability": "stable"
 }

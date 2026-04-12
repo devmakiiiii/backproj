@@ -15,6 +15,11 @@ class Router {
     public function dispatch() {
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $base = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
+        if (strpos($uri, $base) === 0) {
+            $uri = substr($uri, strlen($base));
+        }
+        if (empty($uri)) $uri = '/';
         foreach ($this->routes[$method] ?? [] as $route => $handler) {
             if (preg_match('#^' . preg_replace('/\{([^}]+)\}/', '([^/]+)', $route) . '$#', $uri, $matches)) {
                 array_shift($matches);  // Remove full match

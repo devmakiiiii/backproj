@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Models\Auction;
 use App\Models\User;
+use App\Services\AuthService;
 
 class AuctionController {
     private $auctionModel;
@@ -14,62 +15,80 @@ class AuctionController {
     }
 
     public function index() {
-        session_start();
-        if (!isset($_SESSION['user_id'])) {
-            header('Location: /login');
-            exit();
+        header('Content-Type: application/json');
+        $user = AuthService::verifyToken();
+        if (!$user) {
+            http_response_code(401);
+            echo json_encode(['error' => 'Unauthorized']);
+            return;
         }
         $filters = $_GET;
         $auctions = $this->auctionModel->getActiveAuctions($filters);
         $categories = $this->auctionModel->getCategories();
-        require __DIR__ . '/../../resources/views/auction/index.php';
+        echo json_encode(['auctions' => $auctions, 'categories' => $categories]);
     }
 
     public function show($id) {
-        session_start();
-        if (!isset($_SESSION['user_id'])) {
-            header('Location: /login');
-            exit();
+        header('Content-Type: application/json');
+        $user = AuthService::verifyToken();
+        if (!$user) {
+            http_response_code(401);
+            echo json_encode(['error' => 'Unauthorized']);
+            return;
         }
         $auction = $this->auctionModel->findById($id);
         if (!$auction) {
             http_response_code(404);
-            echo "Auction not found.";
-            exit();
+            echo json_encode(['error' => 'Auction not found']);
+            return;
         }
         $bids = $this->auctionModel->getBids($id);
-        $error = '';
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (isset($_POST['bid'])) {
-                if ($this->auctionModel->placeBid($id, $_SESSION['user_id'], $_POST['bid_amount'])) {
-                    header("Location: /auction/$id");
-                    exit();
-                } else {
-                    $error = 'Invalid bid.';
-                }
-            }
-        }
-        require __DIR__ . '/../../resources/views/auction/show.php';
+        echo json_encode(['auction' => $auction, 'bids' => $bids]);
     }
 
     public function create() {
-        session_start();
-        if (!isset($_SESSION['user_id'])) {
-            header('Location: /login');
-            exit();
+        header('Content-Type: application/json');
+        $user = AuthService::verifyToken();
+        if (!$user) {
+            http_response_code(401);
+            echo json_encode(['error' => 'Unauthorized']);
+            return;
         }
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $data = $_POST;
-            // Basic validation
-            if (empty($data['title']) || empty($data['description']) || empty($data['starting_price']) || empty($data['end_time'])) {
-                $error = 'All fields required.';
-            } else {
-                $this->auctionModel->create($data, $_SESSION['user_id']);
-                header('Location: /auctions');
-                exit();
-            }
+        $input = json_decode(file_get_contents('php://input'), true);
+        if (!$input || empty($input['title']) || empty($input['description']) || empty($input['starting_price']) || empty($input['end_time'])) {
+            http_response_code(400);
+            echo json_encode(['error' => 'All fields required']);
+            return;
         }
-        $categories = $this->auctionModel->getCategories();
-        require __DIR__ . '/../../resources/views/auction/create.php';
+        try {
+            $this->auctionModel->create($input, $user->user_id);
+            http_response_code(201);
+            echo json_encode(['message' => 'Auction created successfully']);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to create auction']);
+        }
+    }
+
+    public function placeBid($id) {
+        header('Content-Type: application/json');
+        $user = AuthService::verifyToken();
+        if (!$user) {
+            http_response_code(401);
+            echo json_encode(['error' => 'Unauthorized']);
+            return;
+        }
+        $input = json_decode(file_get_contents('php://input'), true);
+        if (!$input || !isset($input['bid_amount'])) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Bid amount required']);
+            return;
+        }
+        if ($this->auctionModel->placeBid($id, $user->user_id, $input['bid_amount'])) {
+            echo json_encode(['message' => 'Bid placed successfully']);
+        } else {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid bid']);
+        }
     }
 }

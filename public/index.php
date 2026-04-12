@@ -1,5 +1,9 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 require_once __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
 session_start();
 
 $router = new App\Core\Router();
@@ -7,25 +11,14 @@ $router = new App\Core\Router();
 $auctionController = new App\Controllers\AuctionController();
 $userController = new App\Controllers\UserController();
 
-$router->get('/', function() {
-    if (isset($_SESSION['user_id'])) {
-        header('Location: /auctions');
-    } else {
-        header('Location: /login');
-    }
-});
+// API routes only
+$router->post('/api/signup', [$userController, 'signup']);
+$router->post('/api/login', [$userController, 'login']);
+$router->post('/api/logout', [$userController, 'logout']);
 
-$router->get('/login', [$userController, 'login']);
-$router->post('/login', [$userController, 'login']);
-$router->get('/signup', [$userController, 'signup']);
-$router->post('/signup', [$userController, 'signup']);
-$router->get('/logout', [$userController, 'logout']);
-
-$router->get('/auctions', [$auctionController, 'index']);
-$router->get('/auction/{id}', function($id) use ($auctionController) {
-    $auctionController->show($id);
-});
-$router->get('/create-auction', [$auctionController, 'create']);
-$router->post('/create-auction', [$auctionController, 'create']);
+$router->get('/api/auctions', [$auctionController, 'index']);
+$router->get('/api/auction/{id}', [$auctionController, 'show']);
+$router->post('/api/auction', [$auctionController, 'create']);
+$router->post('/api/auction/{id}/bid', [$auctionController, 'placeBid']);
 
 $router->dispatch();
