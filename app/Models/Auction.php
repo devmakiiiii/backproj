@@ -93,4 +93,24 @@ class Auction {
             }
         }
     }
+
+    public function closeAuction($auctionId) {
+        $highestBid = $this->getHighestBid($auctionId);
+        if ($highestBid) {
+            $stmt = $this->pdo->prepare("UPDATE auctions SET status = 'ended', winner_id = ?, final_price = ? WHERE id = ?");  // Fixed: "UPDATTE" -> "UPDATE"
+            $stmt->execute([$highestBid['bidder_id'], $highestBid['amount'], $auctionId]);
+
+            $auction = $this->findById($auctionId);
+            $transactionModel = new Transaction();
+            $transactionModel->create($auctionId, $highestBid['bidder_id'], $auction['seller_id'], $highestBid['amount']);
+            return true;
+        }
+        return false;
+    }
+
+    public function getHighestBid($auctionId) {
+        $stmt = $this->pdo->prepare("SELECT bidder_id, amount FROM bids WHERE auction_id = ? ORDER BY amount DESC LIMIT 1");
+        $stmt->execute([$auctionId]);
+        return $stmt->fetch();
+    }
 }

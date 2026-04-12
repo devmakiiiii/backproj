@@ -2,6 +2,7 @@ CREATE DATABASE IF NOT EXISTS auction_db;
 USE auction_db;
 
 -- Users table (your existing)
+-- Users table (your existing)
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(255) NOT NULL,
@@ -11,8 +12,9 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255) NOT NULL UNIQUE,
     mobilenumber VARCHAR(20) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+-- Add role column to users table
+ALTER TABLE users ADD COLUMN role ENUM('user', 'admin') DEFAULT 'user' AFTER password;
 
 -- Categories table
 CREATE TABLE IF NOT EXISTS categories (

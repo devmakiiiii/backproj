@@ -11,6 +11,21 @@ class User {
         $this->pdo = Database::getInstance()->getPdo();
     }
 
+    public function updateRole($userId, $role) {
+        $stmt = $this->pdo->prepare("UPDATE users SET role = ? WHERE id = ?");
+        return $stmt->execute([$role, $userId]);
+    }
+
+    public function getRole($userId) {
+        $stmt = $this->pdo->prepare("SELECT role FROM users WHERE id = ?");
+        $stmt->execute([$userId]);
+        return $stmt->fetchColumn();
+    }
+
+    public function isAdmin($userId) {
+        return $this->getRole($userId) === 'admin';
+    }
+
     public function findById($id) {
         $stmt = $this->pdo->prepare("SELECT * FROM users WHERE id = ?");
         $stmt->execute([$id]);
@@ -43,5 +58,10 @@ class User {
             return $user['id'];
         }
         return false;
+    }
+
+    public function getAllUsers() {
+        $stmt = $this->pdo->query("SELECT id, firstname, middlename, lastname, username, email, mobilenumber, role FROM users");
+        return $stmt->fetchAll();
     }
 }

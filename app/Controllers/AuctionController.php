@@ -91,4 +91,11 @@ class AuctionController {
             echo json_encode(['error' => 'Invalid bid']);
         }
     }
+
+    public function closeAuction($id) {
+        if ($this->auctionModel->closeAuction($id)) {
+            return true;
+        }
+        return false;
+    }
 }

@@ -21,8 +21,10 @@ class UserController {
         }
         $userId = $this->userModel->authenticate($input['username'], $input['password']);
         if ($userId) {
+            $role = $this->userModel->getRole($userId);  // Add this
             $payload = [
                 'user_id' => $userId,
+                'role' => $role,  // Add this
                 'exp' => time() + 3600 // 1 hour expiry
             ];
             $jwt = JWT::encode($payload, $_ENV['JWT_SECRET'], ['HS256']);
