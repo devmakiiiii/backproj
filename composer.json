@@ -1,0 +1,28 @@
+{
+    "name": "desktop5420/backproj-main",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.0",
+        "firebase/php-jwt": "^6.10",
+        "stripe/stripe-php": "^20.0"
+    },
+    "config": {
+        "audit": {
+            "block-insecure": false
+        }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maki Palomares",
+            "email": "dev.palomares@gmail.com"
+        }
+    ],
+
+    "minimum-stability": "stable"
+}
