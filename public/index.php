@@ -2,6 +2,14 @@
 // Log errors to file instead of suppressing them
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/../logs/php_errors.log');
+ini_set('display_errors', 0);
+
+// Register default exception handler to return JSON errors
+set_exception_handler(function($e) {
+    http_response_code(500);
+    header('Content-Type: application/json');
+    echo json_encode(['error' => 'Server error: ' . $e->getMessage()]);
+});
 
 // CORS headers for preflight requests
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
@@ -18,8 +26,13 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
 
 require_once __DIR__ . '/../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
-$dotenv->load();
+try {
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+    $dotenv->load();
+} catch (Exception $e) {
+    // If .env is missing, log and continue - will fail on DB connection
+    error_log('.env loading failed: ' . $e->getMessage());
+}
 
 session_start();
 

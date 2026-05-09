@@ -2,6 +2,7 @@
 namespace App\Core;
 
 use PDO;
+use Exception;
 
 class Database {
     private static $instance;
@@ -10,11 +11,13 @@ class Database {
     private function __construct() {
         try {
             $config = require __DIR__ . '/../../config/database.php';
-            $dsn = "mysql:host={$config['host']};dbname={$config['name']}";
-            $this->pdo = new PDO($dsn, $config['user'], $config['pass']);
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            throw new Exception('Database connection failed: ' . $e->getMessage());
+            $dsn = "mysql:host={$config['host']};dbname={$config['name']};charset=utf8";
+            $this->pdo = new PDO($dsn, $config['user'], $config['pass'], [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            ]);
+        } catch (Exception $e) {
+            error_log('Database connection failed: ' . $e->getMessage());
+            throw new Exception('Database connection failed');
         }
     }
 

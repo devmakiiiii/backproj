@@ -16,7 +16,8 @@ class Router {
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $base = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
-        if (strpos($uri, $base) === 0) {
+        // Only strip base if it's not just "/" to avoid stripping the leading slash from URIs
+        if ($base !== '/' && strpos($uri, $base) === 0) {
             $uri = substr($uri, strlen($base));
         }
         if (empty($uri)) $uri = '/';
