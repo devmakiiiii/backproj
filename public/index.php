@@ -34,6 +34,8 @@ try {
     error_log('.env loading failed: ' . $e->getMessage());
 }
 
+require_once __DIR__ . '/../config/config.php';
+
 session_start();
 
 $router = new App\Core\Router();
@@ -41,6 +43,7 @@ $router = new App\Core\Router();
 $auctionController = new App\Controllers\AuctionController();
 $userController = new App\Controllers\UserController();
 $adminController = new App\Controllers\AdminController();
+$bidController = new App\Controllers\BidController();
 $paymentController = new App\Controllers\PaymentController();
 $webhookController = new App\Controllers\WebhookController();
 
@@ -50,41 +53,28 @@ $router->post('/api/payment/intent/{id}', [$paymentController, 'createPaymentInt
 $router->post('/api/payment/confirm/{id}', [$paymentController, 'confirmPayment']);
 $router->post('/api/admin/promote/{id}', [$adminController, 'promoteToAdmin']);
 $router->get('/api/admin/users', [$adminController, 'getAllUsers']);
-$router->post('/api/signup', [$userController, 'signup']);
-$router->post('/api/login', [$userController, 'login']);
+$router->get('/api/admin/items', [$adminController, 'getAllItems']);
+$router->get('/api/admin/bids', [$adminController, 'getAllBids']);
+$router->get('/api/reports/highest-bids', [$adminController, 'getHighestBids']);
+$router->get('/api/reports/auction-results', [$adminController, 'getAuctionResults']);
+
+$router->post('/api/auth/register', [$userController, 'register']);
+$router->post('/api/auth/login', [$userController, 'login']);
 $router->post('/api/logout', [$userController, 'logout']);
+$router->get('/api/users/profile', [$userController, 'getProfile']);
+$router->put('/api/users/profile', [$userController, 'updateProfile']);
+
+$router->post('/api/items', [$auctionController, 'create']);
+$router->get('/api/items', [$auctionController, 'index']);
+$router->get('/api/items/{id}', [$auctionController, 'show']);
+
+$router->post('/api/bids', [$bidController, 'placeBid']);
+$router->get('/api/bids/item/{item_id}', [$bidController, 'getItemBids']);
 
 $router->get('/api/auctions', [$auctionController, 'index']);
 $router->get('/api/auction/{id}', [$auctionController, 'show']);
 $router->post('/api/auction', [$auctionController, 'create']);
 $router->post('/api/auction/{id}/bid', [$auctionController, 'placeBid']);
-$router->get('/api/user/profile', function() use ($userController) {
-    header('Content-Type: application/json');
-    try {
-        $user = \App\Services\AuthService::verifyToken();
-        if (!$user) {
-            http_response_code(401);
-            echo json_encode(['error' => 'Unauthorized']);
-            return;
-        }
-        $userData = $userController->getUserById($user->user_id);
-        if ($userData) {
-            echo json_encode([
-                'id' => $user->user_id,
-                'firstname' => $userData['firstname'] ?? '',
-                'lastname' => $userData['lastname'] ?? '',
-                'email' => $userData['email'] ?? 'user@example.com',
-                'role' => $user->role
-            ]);
-        } else {
-            http_response_code(404);
-            echo json_encode(['error' => 'User not found']);
-        }
-    } catch (Exception $e) {
-        http_response_code(500);
-        echo json_encode(['error' => 'Server error: ' . $e->getMessage()]);
-    }
-});
 
 $router->post('/api/admin/close-auction/{id}', function($id) use ($auctionController) {
     header('Content-Type: application/json');

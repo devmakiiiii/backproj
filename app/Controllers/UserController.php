@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Models\User;
 use Firebase\JWT\JWT;
+use App\Services\AuthService;
 
 class UserController {
     private $userModel;
@@ -12,8 +13,40 @@ class UserController {
         try {
             $this->userModel = new User();
         } catch (Exception $e) {
-            // Store the error to handle in methods
             $this->dbError = $e->getMessage();
+        }
+    }
+
+    public function register() {
+        header('Content-Type: application/json');
+        if ($this->dbError) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Database error: ' . $this->dbError]);
+            return;
+        }
+        $input = json_decode(file_get_contents('php://input'), true);
+        if (!$input) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid JSON input']);
+            return;
+        }
+        if (empty($input['firstname']) || empty($input['lastname']) || empty($input['username']) || !filter_var($input['email'], FILTER_VALIDATE_EMAIL) || strlen($input['password']) < 8 || $input['password'] !== $input['confirmpassword']) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid input data']);
+            return;
+        }
+        if ($this->userModel->findByUsername($input['username'])) {
+            http_response_code(400);
+            echo json_encode(['error' => 'Username already exists']);
+            return;
+        }
+        try {
+            $this->userModel->create($input);
+            http_response_code(201);
+            echo json_encode(['message' => 'User created successfully']);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to create user: ' . $e->getMessage()]);
         }
     }
 
@@ -37,7 +70,7 @@ class UserController {
                 $payload = [
                     'user_id' => $userId,
                     'role' => $role,
-                    'exp' => time() + 3600 // 1 hour expiry
+                    'exp' => time() + 3600
                 ];
                 $jwt = JWT::encode($payload, $_ENV['JWT_SECRET'], 'HS256');
                 echo json_encode(['token' => $jwt]);
@@ -51,58 +84,30 @@ class UserController {
         }
     }
 
-    public function signup() {
+    public function getProfile() {
         header('Content-Type: application/json');
-        if ($this->dbError) {
-            http_response_code(500);
-            echo json_encode(['error' => 'Database error: ' . $this->dbError]);
-            return;
-        }
-        $input = json_decode(file_get_contents('php://input'), true);
-        if (!$input) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Invalid JSON input']);
-            return;
-        }
-        // Validation
-        if (empty($input['firstname']) || empty($input['lastname']) || empty($input['username']) || !filter_var($input['email'], FILTER_VALIDATE_EMAIL) || strlen($input['password']) < 8 || !preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/', $input['password']) || $input['password'] !== $input['confirmpassword']) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Invalid input data: password must be at least 8 characters with uppercase, lowercase, number, and special character']);
-            return;
-        }
-        if ($input['password'] !== $input['confirmpassword']) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Passwords do not match']);
-            return;
-        }
-        if ($this->userModel->findByUsername($input['username'])) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Username already exists']);
-            return;
-        }
-        if ($this->userModel->findByEmail($input['email'])) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Email already exists']);
-            return;
-        }
         try {
-            $this->userModel->create($input);
-            http_response_code(201);
-            echo json_encode(['message' => 'User created successfully']);
+            $user = AuthService::verifyToken();
+            if (!$user) {
+                http_response_code(401);
+                echo json_encode(['error' => 'Unauthorized']);
+                return;
+            }
+            $userData = $this->userModel->findById($user->user_id);
+            if ($userData) {
+                echo json_encode($userData);
+            } else {
+                http_response_code(404);
+                echo json_encode(['error' => 'User not found']);
+            }
         } catch (Exception $e) {
             http_response_code(500);
-            echo json_encode(['error' => 'Failed to create user: ' . $e->getMessage()]);
+            echo json_encode(['error' => 'Server error: ' . $e->getMessage()]);
         }
-    }
-
-    public function logout() {
-        header('Content-Type: application/json');
-        // For JWT, logout is typically handled on frontend by removing token
-        // If needed, implement token blacklisting here
-        echo json_encode(['message' => 'Logged out']);
     }
 
     public function getUserById($id) {
+        header('Content-Type: application/json');
         if ($this->dbError) {
             http_response_code(500);
             echo json_encode(['error' => 'Database error: ' . $this->dbError]);
@@ -115,6 +120,34 @@ class UserController {
             http_response_code(404);
             echo json_encode(['error' => 'User not found']);
             return ['error' => 'User not found'];
+        }
+    }
+
+    public function updateProfile() {
+        header('Content-Type: application/json');
+        try {
+            $user = AuthService::verifyToken();
+            if (!$user) {
+                http_response_code(401);
+                echo json_encode(['error' => 'Unauthorized']);
+                return;
+            }
+            $input = json_decode(file_get_contents('php://input'), true);
+            if (!$input) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Invalid input']);
+                return;
+            }
+            if ($this->userModel->updateProfile($user->user_id, $input)) {
+                $updated = $this->userModel->findById($user->user_id);
+                echo json_encode($updated);
+            } else {
+                http_response_code(500);
+                echo json_encode(['error' => 'Failed to update profile']);
+            }
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Server error: ' . $e->getMessage()]);
         }
     }
 }

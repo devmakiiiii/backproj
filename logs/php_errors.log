@@ -142,3 +142,409 @@
 [07-May-2026 15:04:16 Europe/Berlin] JWT decoded successfully for user_id: 5
 [07-May-2026 15:04:16 Europe/Berlin] Auth header found: yes
 [07-May-2026 15:04:16 Europe/Berlin] JWT decoded successfully for user_id: 5
+[09-May-2026 19:53:02 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 19:53:02 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 19:53:37 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 19:53:37 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 20:07:29 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 20:07:29 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 20:07:39 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 20:07:39 Europe/Berlin] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\.env]. in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\public\index.php(22): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[09-May-2026 20:14:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:14:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:18:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:19:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:19:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:21:44 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:21:44 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:22:45 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:22:45 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:22:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:22:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:25:35 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:25:35 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:27:27 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:27:28 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:27:46 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:03 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:18 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:18 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:18 Europe/Berlin] Auth header found: yes
+[09-May-2026 20:28:18 Europe/Berlin] JWT decoded successfully for user_id: 1
+[09-May-2026 20:28:22 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:22 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:22 Europe/Berlin] Auth header found: yes
+[09-May-2026 20:28:22 Europe/Berlin] JWT decoded successfully for user_id: 1
+[09-May-2026 20:28:22 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:22 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[09-May-2026 20:28:22 Europe/Berlin] Auth header found: yes
+[09-May-2026 20:28:22 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 13:48:37 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:48:37 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:48:37 Europe/Berlin] Auth header found: yes
+[11-May-2026 13:48:37 Europe/Berlin] JWT decode error: Expired token
+[11-May-2026 13:48:37 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:48:37 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:48:37 Europe/Berlin] Auth header found: yes
+[11-May-2026 13:48:37 Europe/Berlin] JWT decode error: Expired token
+[11-May-2026 13:59:10 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:59:10 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:59:12 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 13:59:12 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:03:16 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:03:17 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:08:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:08:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:08:14 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:08:14 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:12:49 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:12:59 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:12:59 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:12:59 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:12:59 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:13:36 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:36 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:13:36 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:13:37 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:39 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:13:39 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:13:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:39 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:13:39 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:13:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:51 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:13:51 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:55 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:13:56 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:33:15 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:33:15 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:33:15 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:33:15 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:33:15 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:33:15 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:33:15 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:33:15 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:34:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:34:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:34:29 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:34:29 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:34:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:34:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:34:29 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:34:29 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:35:33 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:35:34 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:35:34 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:35:34 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:35:34 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:35:34 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:35:34 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:35:34 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:37:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:37:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:37:54 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:37:54 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:37:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:37:54 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:37:54 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:37:54 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:40:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:40:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:40:01 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:40:01 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:40:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:40:01 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:40:01 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:40:01 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:41:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:41:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:41:14 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:41:14 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:41:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:41:14 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:41:14 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:41:14 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:42:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:42:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:42:29 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:42:29 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:42:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:42:29 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:42:29 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:42:29 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:43:46 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:43:46 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:43:46 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:43:46 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:43:46 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:43:46 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:43:46 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:43:46 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:44:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:44:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:44:39 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:44:39 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:44:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:44:39 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:44:39 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:44:39 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:55:45 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:45 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:45 Europe/Berlin] Auth header found: yes
+[11-May-2026 14:55:45 Europe/Berlin] JWT decoded successfully for user_id: 1
+[11-May-2026 14:55:49 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:49 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:49 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:50 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:51 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[11-May-2026 14:55:53 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14
+[15-May-2026 03:41:37 Europe/Berlin] PHP Warning:  hex2bin(): Hexadecimal input string must have an even length in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\config\config.php on line 3
+[15-May-2026 03:41:41 Europe/Berlin] Database connection failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[15-May-2026 03:41:42 Europe/Berlin] PHP Warning:  hex2bin(): Hexadecimal input string must have an even length in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\config\config.php on line 3
+[15-May-2026 03:41:46 Europe/Berlin] Database connection failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[15-May-2026 03:41:46 Europe/Berlin] PHP Warning:  hex2bin(): Hexadecimal input string must have an even length in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\config\config.php on line 3
+[15-May-2026 03:41:50 Europe/Berlin] Database connection failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[15-May-2026 03:41:50 Europe/Berlin] PHP Warning:  hex2bin(): Hexadecimal input string must have an even length in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\config\config.php on line 3
+[15-May-2026 03:41:52 Europe/Berlin] PHP Warning:  Undefined array key "STRIPE_SECRET_KEY" in C:\Users\marca\OneDrive\Documents\Clone\FullStack\backproj\app\Controllers\PaymentController.php on line 14

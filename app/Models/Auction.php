@@ -2,6 +2,7 @@
 namespace App\Models;
 
 use App\Core\Database;
+use App\Utils\Encryption;
 use PDO;
 use Exception;
 use App\Models\Transaction;
@@ -14,7 +15,7 @@ class Auction {
     }
 
     public function getActiveAuctions($filters = []) {
-        $query = "SELECT a.id, ai.title, a.current_price, a.end_time, c.name AS category, ai.seller_id AS sellerId, a.status, ai.seller_id AS seller, ai.image_url AS image_url FROM auctions a JOIN auction_items ai ON a.item_id = ai.id LEFT JOIN categories c ON ai.category_id = c.id WHERE a.status = 'active' AND a.end_time > NOW()";
+        $query = "SELECT a.id, ai.title, a.current_price, a.end_time, c.name AS category, ai.seller_id AS sellerId, a.status, u.username AS seller, ai.image_url, ai.description FROM auctions a JOIN auction_items ai ON a.item_id = ai.id LEFT JOIN categories c ON ai.category_id = c.id JOIN users u ON ai.seller_id = u.id WHERE a.status = 'active' AND a.end_time > NOW()";
         $params = [];
         if (!empty($filters['search'])) {
             $query .= " AND ai.title LIKE ?";
@@ -31,10 +32,16 @@ class Auction {
     }
 
 public function findById($id) {
-         $stmt = $this->pdo->prepare("SELECT a.*, ai.title, ai.description, ai.image_url, c.name AS category, u.username AS seller, u.id AS seller_id, ai.seller_id AS user_seller_id FROM auctions a JOIN auction_items ai ON a.item_id = ai.id LEFT JOIN categories c ON ai.category_id = c.id JOIN users u ON ai.seller_id = u.id WHERE a.id = ?");
-         $stmt->execute([$id]);
-         return $stmt->fetch(PDO::FETCH_ASSOC);
-     }
+        $stmt = $this->pdo->prepare("SELECT a.*, ai.title, ai.description, ai.description_iv, ai.description_tag, ai.image_url, c.name AS category, u.username AS seller, u.id AS seller_id, ai.seller_id AS user_seller_id FROM auctions a JOIN auction_items ai ON a.item_id = ai.id LEFT JOIN categories c ON ai.category_id = c.id JOIN users u ON ai.seller_id = u.id WHERE a.id = ?");
+        $stmt->execute([$id]);
+        $auction = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($auction && $auction['description_iv']) {
+            $decrypted = Encryption::decrypt($auction['description'], $auction['description_iv'], $auction['description_tag']);
+            $auction['description'] = $decrypted !== false ? $decrypted : $auction['description'];
+        }
+        unset($auction['description_iv'], $auction['description_tag']);
+        return $auction;
+    }
 
     public function getCategories() {
         $stmt = $this->pdo->query("SELECT id, name FROM categories");
@@ -42,15 +49,24 @@ public function findById($id) {
     }
 
 public function getBids($auctionId) {
-         $stmt = $this->pdo->prepare("SELECT b.id, b.amount, CONCAT(COALESCE(u.firstname, ''), ' ', COALESCE(u.lastname, '')) AS bidderName, b.created_at AS timestamp FROM bids b JOIN users u ON b.bidder_id = u.id WHERE b.auction_id = ? ORDER BY b.amount DESC");
-         $stmt->execute([$auctionId]);
-         return $stmt->fetchAll(PDO::FETCH_ASSOC);
-     }
+        $stmt = $this->pdo->prepare("SELECT b.id, b.amount, b.amount_iv, b.amount_tag, CONCAT(COALESCE(u.firstname, ''), ' ', COALESCE(u.lastname, '')) AS bidderName, b.created_at AS timestamp FROM bids b JOIN users u ON b.bidder_id = u.id WHERE b.auction_id = ? ORDER BY b.amount DESC");
+        $stmt->execute([$auctionId]);
+        $bids = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($bids as &$bid) {
+            if ($bid['amount_iv']) {
+                $decrypted = Encryption::decrypt($bid['amount'], $bid['amount_iv'], $bid['amount_tag']);
+                $bid['amount'] = $decrypted !== false ? $decrypted : $bid['amount'];
+            }
+            unset($bid['amount_iv'], $bid['amount_tag']);
+        }
+        return $bids;
+    }
 
     public function create($data, $userId, $imageUrls = []) {
-        $stmt = $this->pdo->prepare("INSERT INTO auction_items (seller_id, category_id, title, description, image_url) VALUES (?, ?, ?, ?, ?)");
+        $descEnc = Encryption::encrypt($data['description']);
+        $stmt = $this->pdo->prepare("INSERT INTO auction_items (seller_id, category_id, title, description, description_iv, description_tag, image_url) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $imageUrl = !empty($imageUrls) ? json_encode($imageUrls) : null;
-        $stmt->execute([$userId, $data['category_id'], $data['title'], $data['description'], $imageUrl]);
+        $stmt->execute([$userId, $data['category_id'], $data['title'], $descEnc['data'], $descEnc['iv'], $descEnc['tag'], $imageUrl]);
         $itemId = $this->pdo->lastInsertId();
 
         $stmt2 = $this->pdo->prepare("INSERT INTO auctions (item_id, starting_price, current_price, end_time, bid_increment, start_time, status) VALUES (?, ?, ?, ?, ?, NOW(), 'active')");
@@ -72,8 +88,9 @@ public function getBids($auctionId) {
         if (!$auction || $auction['status'] !== 'active' || $auction['user_seller_id'] == $userId || $amount < $auction['current_price'] + ($auction['bid_increment'] ?? 1.00)) {
             return false;
         }
-        $stmt = $this->pdo->prepare("INSERT INTO bids (auction_id, bidder_id, amount) VALUES (?, ?, ?)");
-        $stmt->execute([$auctionId, $userId, $amount]);
+        $amountEnc = Encryption::encrypt((string)$amount);
+        $stmt = $this->pdo->prepare("INSERT INTO bids (auction_id, bidder_id, amount, amount_iv, amount_tag) VALUES (?, ?, ?, ?, ?)");
+        $stmt->execute([$auctionId, $userId, $amountEnc['data'], $amountEnc['iv'], $amountEnc['tag']]);
         $this->pdo->prepare("UPDATE auctions SET current_price = ? WHERE id = ?")->execute([$amount, $auctionId]);
         return true;
     }
@@ -111,8 +128,14 @@ public function getBids($auctionId) {
     }
 
     public function getHighestBid($auctionId) {
-        $stmt = $this->pdo->prepare("SELECT bidder_id, amount FROM bids WHERE auction_id = ? ORDER BY amount DESC LIMIT 1");
+        $stmt = $this->pdo->prepare("SELECT bidder_id, amount, amount_iv, amount_tag FROM bids WHERE auction_id = ? ORDER BY amount DESC LIMIT 1");
         $stmt->execute([$auctionId]);
-        return $stmt->fetch();
+        $bid = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($bid && $bid['amount_iv']) {
+            $decrypted = Encryption::decrypt($bid['amount'], $bid['amount_iv'], $bid['amount_tag']);
+            $bid['amount'] = $decrypted !== false ? $decrypted : $bid['amount'];
+        }
+        unset($bid['amount_iv'], $bid['amount_tag']);
+        return $bid;
     }
 }
